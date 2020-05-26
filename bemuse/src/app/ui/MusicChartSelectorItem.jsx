@@ -42,7 +42,8 @@ class MusicChartSelectorItem extends React.Component {
     }
     return (
       <span className='MusicChartSelectorItemのlevel'>
-        {this.props.chart.info.level}
+        {this.props.chart.info.level}{' '}
+        {(this.props.chart.noteCount / this.props.chart.duration).toFixed(2)}
       </span>
     )
   }

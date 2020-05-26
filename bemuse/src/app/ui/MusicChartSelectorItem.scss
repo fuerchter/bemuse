@@ -12,7 +12,7 @@
   position: relative;
   box-sizing: border-box;
   &.is-active {
-    color: white;
+    color: black;
   }
 
   &のlevel {
@@ -30,7 +30,7 @@
       opacity: 1;
     }
     .MusicChartSelectorItemのlevel {
-      opacity: 0;
+      opacity: 1;
     }
   }
 }
