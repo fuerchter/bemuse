@@ -27,7 +27,14 @@ export default class ResultTable extends React.Component {
               <td>
                 <RunningNumber value={result['1']} />
               </td>
-              <th>Meticulous</th>
+              <th>
+                Meticulous (
+                <RunningNumber
+                  formatter={this.formatAccuracy}
+                  value={result['1'] / result['totalCombo']}
+                />
+                )
+              </th>
             </tr>
             <tr>
               <td>
