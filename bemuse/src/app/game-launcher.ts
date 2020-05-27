@@ -83,7 +83,7 @@ export async function launch({
     initialSpeed: +options['player.P1.speed'] || 1,
     laneCover: Options.laneCover(options),
     desiredLeadTime: Options.leadTime(options),
-    songBPM: chart.bpm.median,
+    songBPM: chart.bpm.max,
   })
 
   loadSpec.options = {

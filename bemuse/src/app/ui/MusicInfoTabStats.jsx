@@ -26,7 +26,9 @@ class MusicInfoTabStats extends React.Component {
           <dt>Notes</dt>
           <dd>{chart.noteCount}</dd>
           <dt>BPM</dt>
-          <dd>{chart.bpm.median}</dd>
+          <dd>
+            ({chart.bpm.min}) {chart.bpm.median} ({chart.bpm.max})
+          </dd>
           <dt>Duration</dt>
           <dd>{formatTime(chart.duration)}</dd>
           <dt>Play Count</dt>
